@@ -29,3 +29,8 @@ jobs:
           echo "Log level: ${{ inputs.logLevel }}"
           echo "This repository ${{ github.repository }} contains the following files:"
           tree
+      - name: run something in python
+        shell: python
+        run: |
+          print("Hello World")
+        

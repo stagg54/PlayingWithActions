@@ -12,6 +12,9 @@ on:
           - info
           - warning
           - debug
+  repository_dispatch:
+    types:
+      - hello
         
 
 jobs:

@@ -33,4 +33,4 @@ jobs:
         shell: python
         run: |
           print("Hello World")
-        
+          echo "::warning file:.github/workflows/MyFirstWorkflow.yml,line=36,col=0,endcolum=10,title="my warning"::Testing this out"

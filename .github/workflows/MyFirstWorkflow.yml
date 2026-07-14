@@ -33,4 +33,6 @@ jobs:
         shell: python
         run: |
           print("Hello World")
+      - name: throw warning
+        run: |
           echo "::warning file:README.md,line=1,col=0,endcolum=10,title="my warning"::Testing this out"

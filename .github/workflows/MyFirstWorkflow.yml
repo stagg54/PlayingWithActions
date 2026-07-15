@@ -36,3 +36,5 @@ jobs:
       - name: throw warning
         run: |
           echo "::warning file:README.md,line=1,col=0,endColumn=10::Testing this out"
+          echo "::debug::Debugging Message"
+          echo "::error::Error Occurred Here!"

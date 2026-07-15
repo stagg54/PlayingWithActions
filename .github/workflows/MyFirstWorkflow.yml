@@ -20,6 +20,8 @@ on:
 jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
+    env:
+          ACTIONS_STEP_DEBUG: true
     steps:
       - run: echo "Hello World"
       - name: Checkout
@@ -34,8 +36,6 @@ jobs:
         run: |
           print("Hello World")
       - name: throw warning
-        env:
-          ACTIONS_STEP_DEBUG: true
         run: |
           echo "::warning file:README.md,line=1,col=0,endColumn=10::Testing this out"
           echo "::debug::Debugging Message"

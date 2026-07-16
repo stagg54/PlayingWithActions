@@ -38,7 +38,7 @@ jobs:
           echo "::warning file:README.md,line=1,col=0,endColumn=10::Testing this out"
           echo "::debug::Debugging Message"
           echo "::error::Error Occurred Here!"
-          echo "* Here is a list\
-          - item 1\
-          - item 2\
-          - item 3" > $GITHUB_STEP_SUMMARY
+          echo "Here is a list
+          * item 1
+          * item 3
+          * item 3" > $GITHUB_STEP_SUMMARY

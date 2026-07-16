@@ -42,3 +42,9 @@ jobs:
           * item 1
           * item 3
           * item 3" > $GITHUB_STEP_SUMMARY
+      - name: secret test
+        with:
+          SECRET: ${{ secrets.MY_SECRET }}
+        run: |
+          echo "$SECRET"
+          echo "abc123"
